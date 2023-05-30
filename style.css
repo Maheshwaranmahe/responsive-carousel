@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.carouselcontainer{
+    position: relative;
+    height: 100%;
+    top: -10%;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+}
+.carousel-item img {
+    display: block;
+    height: auto;
+    width: 90%;
+    height: 650px;
+    padding-left: 5%;
+}
+.carousel-control {
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+}
+.carousel-control.prev {
+    left: 6%;
+}
+.carousel-control.next {
+    right: 6%;
+}
+.carousel-control:hover {
+    color: #aaaaaa;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+   display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.carousel-bullet {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.carousel-bullet:hover {
+    color: white;
+}
+
+@media all and (max-width : 760px) {
+    .carousel-item {
+        text-align: center;
+        position: absolute;
+        opacity: 0;
+    }
+    .carousel-item img {
+        display: block;
+        height: auto;
+        width: 90%;
+        height: 300px;
+        padding-left: 5%;
+    }
+}
