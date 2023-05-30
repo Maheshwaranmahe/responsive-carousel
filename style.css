@@ -6,8 +6,9 @@
 }
 .carouselcontainer{
     position: relative;
-    height: 100%;
+    height: 110%;
     top: -10%;
+    background-color: gold;
 }
 .carousel {
     position: relative;
